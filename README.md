@@ -1,84 +1,97 @@
-# Turborepo starter
+# 🧩 Jira Clone — Project & Issue Tracking System
 
-This Turborepo starter is maintained by the Turborepo core team.
+[![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38b2ac?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?logo=mongodb&logoColor=white)](https://mongodb.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Using this example
+A high-performance, full-stack **Jira Clone** that replicates core functionalities of Atlassian Jira — built for teams to manage projects, track bugs, and streamline workflows with a modern, responsive UI.
 
-Run the following command:
+> 🚀 Built with performance, scalability, and developer experience in mind.
 
-```sh
-npx create-turbo@latest
-```
+---
 
-## What's inside?
+## 📌 Demo
 
-This Turborepo includes the following packages/apps:
+🔗 **Live Demo:** [your-demo-link.vercel.app](https://your-demo-link.vercel.app)
 
-### Apps and Packages
+📽️ **Video Walkthrough:** [Watch here](https://link-to-your-loom-or-youtube-demo.com)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+---
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 🛠️ Tech Stack
 
-### Utilities
+| Layer         | Technology                                  |
+| ------------- | ------------------------------------------- |
+| Frontend      | Next.js, React, TypeScript, Tailwind CSS    |
+| Backend       | Node.js, Express.js                         |
+| Database      | MongoDB / PostgreSQL (choose your DB)       |
+| Auth          | NextAuth.js / JWT                           |
+| Drag & Drop   | `@dnd-kit` or `react-beautiful-dnd`         |
+| State Mgmt    | Zustand / Redux Toolkit                     |
+| Deployment    | Vercel (Frontend), Railway / Render (API)   |
 
-This Turborepo has some additional tools already setup for you:
+---
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## ✨ Features
 
-### Build
+- 🔐 **Secure Authentication** — Login/Register with session protection
+- 📁 **Project Board** — Create boards with columns like To Do, In Progress, Done
+- 🧩 **Task Management** — Create, update, delete issues with priority, labels, due dates
+- 🧲 **Drag & Drop** — Reorder tasks within and across columns
+- 🧠 **Global State Management** — Zustand or Redux integration for optimized performance
+- 🔍 **Advanced Filters** — Filter issues by status, assignee, or priority
+- 🧑‍🤝‍🧑 **Team Collaboration Ready** — (Optional) Assign users to issues
+- 📱 **Fully Responsive** — Works seamlessly across mobile, tablet, and desktop
+- 🧪 **Robust Architecture** — Clean folder structure and scalable codebase
 
-To build all apps and packages, run the following command:
+---
 
-```
-cd my-turborepo
-pnpm build
-```
+## 📂 Project Structure
 
-### Develop
+jira-clone/
+├── backend/ # Express + MongoDB API
+│ ├── models/
+│ ├── routes/
+│ └── controllers/
+├── frontend/ # Next.js + Tailwind client
+│ ├── components/
+│ ├── pages/
+│ ├── hooks/
+│ └── utils/
+└── README.md
 
-To develop all apps and packages, run the following command:
 
-```
-cd my-turborepo
-pnpm dev
-```
+---
 
-### Remote Caching
+## ⚙️ Getting Started
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+### 1. Clone the Repository
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+```bash
+git clone https://github.com/arindambiswas/jira-clone.git
+cd jira-clone
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+### 2. 🛡️ Setup Environment Variables
 
-```
-cd my-turborepo
-npx turbo login
-```
+Create `.env` files in both the **frontend** and **backend** directories to securely store configuration details.
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+#### 🔐 Frontend (`frontend/.env.local`)
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXTAUTH_URL=http://localhost:3000
 
-```
-npx turbo link
-```
+Replace your_nextauth_secret with a secure, random string. You can generate one using openssl rand -base64 32.
 
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+### 🔐 Backend (backend/.env)
+env
+Copy
+Edit
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+Make sure MongoDB is running locally or use a cloud service like MongoDB Atlas and replace your_mongodb_connection_string accordingly.
