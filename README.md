@@ -3,7 +3,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38b2ac?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?logo=mongodb&logoColor=white)](https://mongodb.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -15,9 +15,8 @@ A high-performance, full-stack **Jira Clone** that replicates core functionaliti
 
 ## 📌 Demo
 
-🔗 **Live Demo:** [your-demo-link.vercel.app](https://your-demo-link.vercel.app)
-
-📽️ **Video Walkthrough:** [Watch here](https://link-to-your-loom-or-youtube-demo.com)
+🔗 **Live Demo:** [your-demo-link.vercel.app](https://your-demo-link.vercel.app)  
+📽️ **Video Walkthrough:** [Watch here](https://your-loom-or-youtube-demo.com)
 
 ---
 
@@ -27,7 +26,7 @@ A high-performance, full-stack **Jira Clone** that replicates core functionaliti
 | ------------- | ------------------------------------------- |
 | Frontend      | Next.js, React, TypeScript, Tailwind CSS    |
 | Backend       | Node.js, Express.js                         |
-| Database      | MongoDB / PostgreSQL (choose your DB)       |
+| Database      | PostgreSQL                                  |
 | Auth          | NextAuth.js / JWT                           |
 | Drag & Drop   | `@dnd-kit` or `react-beautiful-dnd`         |
 | State Mgmt    | Zustand / Redux Toolkit                     |
@@ -41,13 +40,11 @@ A high-performance, full-stack **Jira Clone** that replicates core functionaliti
 - 📁 **Project Board** — Create boards with columns like To Do, In Progress, Done
 - 🧩 **Task Management** — Create, update, delete issues with priority, labels, due dates
 - 🧲 **Drag & Drop** — Reorder tasks within and across columns
-- 🧠 **Global State Management** — Zustand or Redux integration for optimized performance
+- 🧠 **Global State Management** — Zustand or Redux for smooth performance
 - 🔍 **Advanced Filters** — Filter issues by status, assignee, or priority
 - 🧑‍🤝‍🧑 **Team Collaboration Ready** — (Optional) Assign users to issues
-- 📱 **Fully Responsive** — Works seamlessly across mobile, tablet, and desktop
-- 🧪 **Robust Architecture** — Clean folder structure and scalable codebase
-
----
+- 📱 **Fully Responsive** — Optimized for mobile, tablet, and desktop
+- 🧪 **Scalable Architecture** — Modular structure for easy scaling and maintenance
 
 ## 📂 Project Structure
 
